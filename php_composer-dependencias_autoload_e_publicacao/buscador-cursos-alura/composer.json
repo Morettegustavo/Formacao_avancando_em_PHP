@@ -9,5 +9,8 @@
             "email": "88351614+Morettegustavo@users.noreply.github.com"
         }
     ],
-    "require": {}
+    "require": {
+        "guzzlehttp/guzzle": "^7.5",
+        "symfony/dom-crawler": "^4.2"
+    }
 }
