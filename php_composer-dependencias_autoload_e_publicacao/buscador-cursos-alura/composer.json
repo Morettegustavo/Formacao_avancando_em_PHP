@@ -1,0 +1,13 @@
+{
+    "name": "morettegustavo/buscador-cursos",
+    "description": "Projeto que busca os cursos no site da Alura",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gustavo Faria Morette",
+            "email": "88351614+Morettegustavo@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
