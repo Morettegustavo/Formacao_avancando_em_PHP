@@ -50,3 +50,31 @@ Quando rodamos esse comando é criada uma pasta chamada vendor, nela vai ficar a
 > No terminal, executaremos <strong style="font-size: 1.1em;">composer install</strong>. Com isso, o Composer lerá nosso arquivo JSON e instalará as dependências.
 > 
 > temos também um arquvo composer.lock que explicita tudo que já foi instalado no projeto, incluindo suas versões. Sendo assim, se quisermos em algum momento, além de baixar os novos pacotes, atualizar os já existentes, podemos rodar o comando <strong style="font-size: 1.1em;">composer update</strong>
+
+<hr>
+
+> Durante o desenvolvimento do nosso código, importamos o arquivo atuoload.php dentro dá pasta vendcr.
+> 
+> Qual o próposito deste arquivo?
+
+* Carregar o código responsável por realizar o autoload de classes
+  * Neste arquivo, o Composer faz o trabalho necessário para definir um autoload de classes de forma que seja possível utilizar as dependências sem incluir seus arquivos separadamente.
+
+<hr>
+
+> O que aprendemos até o momento?
+
+* O composer possui um repositório central de pacotes: https://packagist.org/
+* É possível configurar repositórios de outras fontes (do github, zip etc)
+* O pacotes guzzlehttp/guzzle serve para executar requisições HTTP de alto nível
+* Para instalar uma dependência (pacote) basta executar: composer require <nome do pacote>
+* Composer guarda as dependências e dependências transitivas na pasta vendor do projeto
+* O nome e versão da dependências fica salvo no arquivo composer.json
+* O comando require adiciona automaticamente a dependência no composer.json
+* O comando composer install automaticamente baixa todas as dependências do composer.lock (ou do composer.json, caso o .lock não exista ainda)
+* O arquivo composer.lock define todas as versões exatas instaladas
+* O composer já gera um arquivo autoload.php para facilitar o carregamento das dependências
+  * Basta usar require vendor/autoload.php
+
+<hr>
+
