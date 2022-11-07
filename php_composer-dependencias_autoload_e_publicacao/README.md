@@ -210,3 +210,14 @@ Adicionamos scripts no composer.json
 [eventos disponíveis](https://getcomposer.org/doc/articles/scripts.md)
 
 <hr>
+
+# Versionamento
+> Para disponibilizarmos nosso projeto de forma que terceiros possam baixá-lo e utilizá-lo, precisamos armazená-lo em algum repositório público.
+> 
+> O Composer consegue acessar diversos repositórios e para entender quais as versões disponíveis de cada pacote ele vê as tags do GIT em seu respectivo repositório.
+
+* As tags devem ser organizadas seguindo o [“Semantic Versioning”](https://semver.org/)
+
+<hr>
+
+
