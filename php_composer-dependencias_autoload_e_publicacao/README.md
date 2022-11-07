@@ -220,4 +220,6 @@ Adicionamos scripts no composer.json
 
 <hr>
 
+# Certificado
+![](../../../../Downloads/certificado-composer.png)
 
