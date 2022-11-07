@@ -88,6 +88,8 @@ Quando rodamos esse comando é criada uma pasta chamada vendor, nela vai ficar a
 
 <hr>
 
+#  O que é PSR-4?
+*  PSR-4 define um padrão para o carregamento automático de classes
 > Já sabemos que o autoload.php do Composer consegue buscar as classes dos componentes baixados pois eles implementam a PSR-4. Nós também vimos agora como configurar a PSR-4 em nosso projeto
 > 
 > O que é necessário para configurar a PSR-4 em nosso projeto, levando em consideração que nossa estrutura de arquivos já atende seus requisitos?
@@ -104,8 +106,28 @@ Quando rodamos esse comando é criada uma pasta chamada vendor, nela vai ficar a
   }
 ```
 
+Para rodar as configurações do autoload que foram adicionadas no composer.json, rodamos o seguinte comando:
+```
+composer dump-autoload
+```
+
 <hr>
 
+> É muito comum trabalharmos em projetos legados que não implementam a PSR-4 em sua estrutura de arquivos.
+> 
+> Qual a solução que o Composer nos entrega para conseguirmos utilizar um autoload nesses casos?
 
+* Classmap
+```
+"classmap": [
+    "./Teste.php"
+],
+```
+
+Podemos também ter que adicionar um arquivo php procedural, então usamos files:
+```
+ "files": ["functions.php"],
+```
+<hr>
 
 
