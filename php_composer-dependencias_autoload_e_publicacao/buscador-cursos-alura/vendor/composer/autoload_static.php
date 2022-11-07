@@ -36,6 +36,10 @@ class ComposerStaticInitdd1bfa47a52e0268e312a891710533e4
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
         ),
+        'A' => 
+        array (
+            'Alura\\BuscadorDeCursos\\' => 23,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -80,10 +84,15 @@ class ComposerStaticInitdd1bfa47a52e0268e312a891710533e4
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
+        'Alura\\BuscadorDeCursos\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
     );
 
     public static $classMap = array (
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',

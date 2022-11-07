@@ -78,3 +78,34 @@ Quando rodamos esse comando é criada uma pasta chamada vendor, nela vai ficar a
 
 <hr>
 
+> Os pacotes se organizam de forma que o Composer consiga realizar o autoload de todos com um único código.
+> 
+> Quais os principais pontos da PSR-4?
+
+* Todos os arquivos devem ter como seu nome o nome da classe contida nele e a extensão .php
+* Cada um dos namespaces após o vendor namespace deve ser mapeados para uma estrutura de diretórios
+* Um vendor namespace (namespace raiz ou padrão) deve ser mapeado para uma pasta base da aplicação
+
+<hr>
+
+> Já sabemos que o autoload.php do Composer consegue buscar as classes dos componentes baixados pois eles implementam a PSR-4. Nós também vimos agora como configurar a PSR-4 em nosso projeto
+> 
+> O que é necessário para configurar a PSR-4 em nosso projeto, levando em consideração que nossa estrutura de arquivos já atende seus requisitos?
+
+* Basta adicionar na chave psr-4 filha da chave autoload a chave contendo nosso vendor namespace e o valor contendo nossa pasta base, exemplo:
+``` 
+{ “autoload”: { “psr-4”: { “Alura\\Namespace\\Padrao\\”: “src/php/code/” } } }
+
+
+ "autoload": {
+      "psr-4": {
+          "Alura\\BuscadorDeCursos\\": "src/"
+      }
+  }
+```
+
+<hr>
+
+
+
+
