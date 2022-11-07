@@ -5,7 +5,7 @@
 * **`Meus estudos de PHP, composer, e laravel(framework PHP).`**
 
 ## Conteúdo
-- [ ] PHP Composer: Dependências, Autoload e Publicação
+- [x] PHP Composer: Dependências, Autoload e Publicação
 *  Saiba como gerenciar dependências
 *  Entenda o Autoload de classes e funções
 *  Integre ferramentas como PHPUnit
@@ -221,5 +221,5 @@ Adicionamos scripts no composer.json
 <hr>
 
 # Certificado
-![](../../../../Downloads/certificado-composer.png)
+![certificado-composer](https://user-images.githubusercontent.com/88351614/200389386-7efb773b-2825-49cc-858d-25239c387e4d.png)
 
