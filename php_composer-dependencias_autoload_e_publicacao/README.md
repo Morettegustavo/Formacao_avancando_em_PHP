@@ -174,9 +174,33 @@ Adicionamos scripts no composer.json
 "scripts": {
     "test": "phpunit tests\\TestBuscadorDeCursos.php",
     "cs": "phpcs --standard=PSR12 src/",
-    "phan": "phan --allow-polyfill-parser"
+    "phan": "phan --allow-polyfill-parser"   
 }
 ```
 É como se fosse um apelido para nossos comandos.
 
+<hr>
+
+> Podemos fazer referência aos scrips já existentes. Para isso, basta adicionarmos um @ na frente de cada script na lista:
+
+```
+"scripts": {
+    "test": "phpunit tests\\TestBuscadorDeCursos.php",
+    "cs": "phpcs --standard=PSR12 src/",
+    "phan": "phan --allow-polyfill-parser",
+    "check": [
+        "@phan",
+        "@cs",
+        "@test"
+    ]
+}
+```
+* Ao executarmos o composer check, os scripts serão executados com sucesso
+
+> Podemos adicionar descrições personalizadas para nossos scripts
+```
+"scripts-descriptions": {
+    "check": "Roda as verificações do código. PHAN, PHPCS e PHPUNIT"
+}
+```
 <hr>
