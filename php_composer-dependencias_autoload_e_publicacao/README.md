@@ -204,3 +204,9 @@ Adicionamos scripts no composer.json
 }
 ```
 <hr>
+
+# Eventos e scripts
+> Com eles, podemos executar scripts em momentos específicos como, por exemplo, ao instalar ou atualizar um pacote.
+[eventos disponíveis](https://getcomposer.org/doc/articles/scripts.md)
+
+<hr>
