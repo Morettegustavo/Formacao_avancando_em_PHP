@@ -147,3 +147,36 @@ Para que sejam baixadas as dependências dentro de require no arquivo composer.j
 
 <hr>
 
+# Instalando o PHPCS
+* uma ferramenta que nos mostre em que locais do código tal padrão está sendo quebrado. O nome dessa ferramenta é PHP_CodeSniffer, também, conhecida como PHPCS. Acessaremos o [site da ferramenta](https://github.com/squizlabs/PHP_CodeSniffer), onde encontraremos as instruções de instalação com o Composer.
+
+
+
+> Quando utilizamos Composer para gerenciar nosso projeto, normalmente significa que temos consciência do que estamos fazendo e somos pessoas que se preocupam com qualidade de código. Além de diversas boas práticas, existem também recomendações específicas sobre como organizar nosso código.
+> 
+> Em qual linha abrir as chaves, como nomear variáveis e métodos, etc. Tudo isso está bem descrito na [PSR 12](https://www.php-fig.org/psr/psr-12/) e nesta aula instalamos uma ferramenta que verifica se o código que escrevemos
+
+<hr>
+
+* Através do flag --dev definimos que uma dependência não faz parte do ambiente de produção
+* Caso desejarmos baixar as dependências de "produção" apenas podemos usar o flag no-dev
+* Arquivos executáveis fornecidos por componentes instalados pelo composer ficam na pasta vendor/bin
+* Conhecemos três ferramentas do mundo PHP:
+  * phpunit para rodar testes;
+  * phpcs para verificar padrões de código;
+  * phan para executar uma análise estática da sintaxe do nosso código.
+
+<hr>
+
+# Scripts no JSON
+Adicionamos scripts no composer.json
+``` 
+"scripts": {
+    "test": "phpunit tests\\TestBuscadorDeCursos.php",
+    "cs": "phpcs --standard=PSR12 src/",
+    "phan": "phan --allow-polyfill-parser"
+}
+```
+É como se fosse um apelido para nossos comandos.
+
+<hr>
