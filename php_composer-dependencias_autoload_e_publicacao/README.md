@@ -130,4 +130,20 @@ Podemos também ter que adicionar um arquivo php procedural, então usamos files
 ```
 <hr>
 
+# Instalando PHPUnit
+
+```
+composer require --dev phpunit/phpunit ^8
+```
+* Repare que na chamada do composer require foi adicionado um parâmetro --dev. Esse parâmetro informa que a dependência a ser instalada não deverá ser utilizada em ambiente de produção.
+* Em ambiente de produção, quando precisarmos instalar as dependências do projeto, bastará executarmos:
+```
+composer install --no-dev
+```
+Para que sejam baixadas as dependências dentro de require no arquivo composer.json, mas não as dependências de require-dev
+
+> Onde ficam os arquivos executáveis que o Composer traz com os pacotes?
+* Na pasta bin dentro da pasta vendor
+
+<hr>
 
